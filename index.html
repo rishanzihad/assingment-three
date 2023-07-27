@@ -209,7 +209,7 @@ doorstep</h1>
       </div>
 
 
-        <div class="grid gap-5 mt-5 lg:grid-cols-4">
+        <div class="grid gap-5 mt-5 md:grid-cols-2 lg:grid-cols-4">
          <div class="card  bg-base-100 shadow-xl">
             <figure class="px-10 flex-col border-b-2  gap-4 pt-10">
              <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
@@ -225,7 +225,7 @@ doorstep</h1>
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
               <div class="card-actions">
-                <label for="my_modal_6" class="text-red-500">Details</label>
+                <button class="text-red-500" onclick="my_modal_6.showModal()">Details</button>
               </div>
             </div>
           </div>
@@ -271,7 +271,7 @@ doorstep</h1>
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
               <div class="card-actions">
-                <label for="my_modal_8" class="text-red-500">Details</label>
+                <button class="text-red-500" onclick="my_modal_8.showModal()">Details</button>
               </div>
             </div>
           </div>
@@ -290,7 +290,7 @@ doorstep</h1>
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
               <div class="card-actions">
-                <label for="my_modal_9" class="text-red-500">Details</label>
+                <button class="text-red-500" onclick="my_modal_9.showModal()">Details</button>
               </div>
             </div>
           </div>
@@ -322,9 +322,9 @@ doorstep</h1>
           </div>
         </div>
           
-        <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-        <div class="modal  ">
-          <div class="modal-box">
+        <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle lg:modal-start" >
+        <form method="dialog" class="modal-box">
+          
             <div class="card  bg-base-100 shadow-xl">
             <figure class="px-10 flex-col gap-4 pt-10">
              <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
@@ -340,23 +340,23 @@ doorstep</h1>
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
             <div class="modal-action">
-              <button class="btn bg-red-400">Buy now</button>
-              <label for="my_modal_6" class="btn">Close!</label>
+              <label for="my_modal_6" class="btn">Buy now</label>
+              <button class="btn bg-red-400">Close!</button>
+              
 
             </div>
-          </div>
-        </div>
-
-        <input type="checkbox" id="my_modal_8" class="modal-toggle" />
-        <div class="modal  ">
-          <div class="modal-box">
+          </form>
+        </diolog>
+        <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle lg:modal-start" >
+        <form method="dialog" class="modal-box">
+          
             <div class="card  bg-base-100 shadow-xl">
             <figure class="px-10 flex-col gap-4 pt-10">
              <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
              <p>12.90$ - 18.85$</p>
             </figure>
             <div class="card-body items-center text-center">
-             <h2 class="card-title">Apple</h2>
+             <h2 class="card-title">Red Dragon</h2>
               <div class="rating">
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
@@ -365,23 +365,23 @@ doorstep</h1>
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
             <div class="modal-action">
-              <button class="btn bg-red-400">Buy now</button>
-              <label for="my_modal_8" class="btn">Close!</label>
+              <label for="my_modal_9" class="btn">Buy now</label>
+              <button class="btn bg-red-400">Close!</button>
+             
 
             </div>
-          </div>
-        </div>
-
-        <input type="checkbox" id="my_modal_9" class="modal-toggle" />
-        <div class="modal  ">
-          <div class="modal-box">
+          </form>
+        </diolog>
+        <dialog id="my_modal_9" class="modal modal-bottom sm:modal-middle lg:modal-start" >
+        <form method="dialog" class="modal-box">
+          
             <div class="card  bg-base-100 shadow-xl">
             <figure class="px-10 flex-col gap-4 pt-10">
              <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
              <p>12.90$ - 18.85$</p>
             </figure>
             <div class="card-body items-center text-center">
-             <h2 class="card-title">Apple</h2>
+             <h2 class="card-title">Banana</h2>
               <div class="rating">
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
@@ -390,12 +390,15 @@ doorstep</h1>
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
             <div class="modal-action">
-              <button class="btn bg-red-400">Buy now</button>
-              <label for="my_modal_9" class="btn">Close!</label>
+              <label for="my_modal_9" class="btn">Buy now</label>
+              <button class="btn bg-red-400">Close!</button>
+              
 
             </div>
-          </div>
-        </div>
+          </form>
+        </diolog>
+
+        
    
         </section>
 
@@ -435,7 +438,7 @@ doorstep</h1>
           </section>
 
           <section class="lg:flex lg:flex-row flex flex-col mb-10 mt-10 lg:px-8 items-center">
-            <div class=" lg:w-1/3">
+            <div class=" md:w-full lg:w-1/3">
               <h2 class="text-xl font-normal   mb-2 border-solid border-b-2 border-black">Dedicated Team </h2>
               <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
               <h2 class="text-xl mt-3 font-normal  mb-2 border-solid border-b-2 border-black">Fresh is Best</h2>
@@ -443,10 +446,10 @@ doorstep</h1>
               <h2 class="text-xl mt-3 font-normal   mb-2 border-solid border-b-2 border-black">Gift Certificates </h2>
               <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
               </div>
-            <div class="lg:w-1/3 ml-3">
+            <div class=" md:w-cover lg:w-1/3 ml-3">
               <img src="images/whychoose1.png" alt="">
               </div>
-            <div class="lg:w-1/3 text-right">
+            <div class="md:w-full lg:w-1/3 text-right">
               <h2 class="text-xl  font-normal  mb-2 border-solid border-b-2 border-black">Integrated Supplier </h2>
               <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
               <h2 class="text-xl mt-3 font-normal t mb-2 border-solid border-b-2 border-black">Sustainable </h2>
